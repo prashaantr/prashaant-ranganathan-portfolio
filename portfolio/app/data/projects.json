@@ -1,0 +1,499 @@
+[
+  {
+    "id": "qwokka-ai",
+    "title": "Qwokka AI: Real-Time Employee Morale Analytics Platform",
+    "githubLink": "https://github.com/prashaantr/qwokka-landing-page",
+    "categories": ["Venture", "AI & Research", "Growth & Strategy"],
+    "date": "2024 - Present",
+    "description": "Co-founded and led the development of an AI-powered SaaS platform that measures and enhances employee morale in real-time. Secured three major clients, including Mexico's largest fintech company.",
+    "image": "/images/Qwokka/hero-qwokka.png",
+    "tags": ["Co-Founder", "Product Strategy", "AI/ML", "Data Architecture"],
+    "timeline": "2024 - Present",
+    "overview": "Qwokka AI is an innovative platform designed to quantify and improve employee engagement through real-time analytics. Currently in the angel stage, the platform is rapidly evolving based on early customer demand. As the Co-Founder and CTO, I spearheaded its development, securing major clients and ensuring seamless adoption.",
+   "projectLink": "https://www.qwokka.ai/",
+    "challenges": [
+      "HR teams are always playing catch-up—they only realize engagement is dropping after it's a problem (e.g., turnover, burnout). They need predictive insights to act before disengagement escalates.",
+      "Ensuring compliance with privacy regulations like GDPR and CCPA",
+      "HR teams need engagement insights without overwhelming employees with feedback requests.",
+      "Companies guess which policies (e.g., no-meeting days, hybrid work models) improve engagement—but they lack a way to test effectiveness before rollout."
+    ],
+    "solutions": [
+    "Engagement Experimentation Sandbox → Helping HR teams test & refine engagement strategies.",
+    "Real-time Engagement Dashboard → Providing HR teams with AI-driven insights on workforce sentiment and productivity blockers.",
+    "AI-Powered eNPS → Automatically tracking and explaining engagement score fluctuations.",
+    "Seamless Active & Passive Data Collection → Combining direct feedback with behavioral trends for a holistic engagement view."
+      ],
+    "results": {
+      "clientsSecured": "Secured 3 enterprise clients, including Mexico's largest fintech company.",
+      "employeeEngagement": "Increased employee sentiment reporting frequency by 2x compared to traditional quarterly surveys.",
+      "AI Powered eNPS score": "AI-powered eNPS tracking enabled customers to identify engagement trends rather than just relying on static scores.",
+      "userAdoption": "Achieved a 90% HR team and engineering team adoption within the first month of client onboarding."
+    },
+    "techStack": {
+      "frontend": ["Next.js "],
+      "database": ["Supabase"
+],
+      "devOps": ["Vercel", "Docker"]
+    },
+    "mobileScreens": [
+      {
+          "image": "/images/Qwokka/mobile1.svg",
+          "description": "Landing page."
+      },
+      {
+          "image": "/images/Qwokka/mobile2.svg",
+          "description": "Use cases."
+      },
+      {
+          "image": "/images/Qwokka/mobile3.svg",
+          "description": "Data analytics."
+      }],
+    "architecture": {
+      "diagram": "graph TD\n  A[User Input] --> B[Frontend (Next.js)]\n  B --> C[Supabase DB]\n  C --> D[Analytics Engine]\n  D --> E[Real-Time Dashboard]\n  B --> F[Authentication (GoogleAuth)]\n  G[Firebase Functions] --> D[Analytics Engine]",
+      "description":  "The architecture integrates real-time user input with scalable analytics pipelines. Data flows from the frontend to Supabase for storage, processed by Firebase Functions for backend logic and analytics, and visualized on the real-time dashboard."
+    },
+    "codeSnippets": [
+      {
+        "title": "Real-Time Data Pipeline",
+        "language": "javascript",
+        "code": "async function fetchData() {\n  const response = await supabase.from('engagement_data').select('*');\n  return processAnalytics(response);\n}"
+      },
+      {
+        "title": "GoogleAuth Integration",
+        "language": "javascript",
+        "code": "import { signInWithGoogle } from 'firebase/auth';\n\nasync function authenticateUser() {\n  const user = await signInWithGoogle();\n  return user;\n}"
+      }
+    ],
+    "projectManagement": [
+      "Implemented agile methodologies to iterate rapidly and meet client needs",
+      "Coordinated cross-functional teams to deliver an intuitive and scalable product",
+      "Prioritized user feedback for continuous improvement of features and insights"
+    ],
+    "problemSpace": {
+      "description": "Employee disengagement costs billions, yet traditional surveys provide only delayed, self-reported snapshots of employee engagement. Without \n real-time engagement tracking, companies miss early burnout signals, leading to preventable turnover. By combining passive data (behavioral patterns, engagement trends) with active data (surveys, feedback), organizations can detect disengagement early and act before productivity and retention suffer. 🚀",
+      "targetAudience": "HR departments and C-suite executives in medium to large enterprises",
+      "marketSize": "$5.5 billion in the employee engagement market by 2025",
+      "image": "/images/Qwokka/passiveData.svg",
+      "keyStats": [
+        { "value": "67%", "label": "of employees are not engaged at work" },
+        { "value": "$1.9T", "label": "Annual cost of disengagement in the US" },
+        { "value": "37%", "label": "Higher sales for engaged teams" }
+      ]
+    },
+    "challengesImage": "https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80",
+    "solutionsImage": "/images/Qwokka/chat.svg",
+    "resultsImage": "/images/Qwokka/results.png",
+    "technicalInsights": [
+    "Developed a hybrid engagement tracking system combining passive behavioral data with active feedback loops for contextual insights.",
+    "Optimized eNPS analytics using machine learning to analyze score fluctuations and provide actionable recommendations.",
+    "Integrated predictive modeling to identify potential attrition risks before disengagement leads to turnover.",
+    "Built an Engagement Experimentation Sandbox using A/B testing methodologies to measure policy impact on engagement."
+    ],
+    "teamSize": "5 members",
+    "overviewImage": "/images/Qwokka/project-overview.png",
+    "customerDiscovery": {
+      "process": "Our team conducted extensive market research and interviewed over 50 HR teams, employers, and CEOs to deeply understand the challenges they face in monitoring and improving workplace morale.",
+      "validationMethods": "We used a combination of surveys, prototype testing, and beta user feedback to validate our product hypotheses and refine our solution. By iterating on early mockups and low-fidelity prototypes, we ensured our platform met user needs before full development.",
+      "keyInsights": [
+        "Employees are concerned about surveillance, and companies want engagement analytics without violating trust.",
+        "eNPS (Employee Net Promoter Score) is Critical, But Companies Struggle to Improve It. Customers want more than just a score—they need AI-driven analysis to understand why engagement fluctuates and how to improve it.",
+        "Proactive vs. Reactive Management: Empowering leaders with continuous feedback loops enables proactive culture management—catching burnout risks and disengagement trends before they become crises."
+      ],
+      "image1": "https://images.unsplash.com/photo-1515187029135-18ee286d815b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      "image2": "https://images.unsplash.com/photo-1531538606174-0f90ff5dce83?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80"
+    }
+  },
+  {
+    "id": "miranda-ai",
+    "title": "Miranda AI: Enhancing Legal Intelligence for Public Defenders",
+    "categories": ["AI & Research", "Growth & Strategy"],
+    "date": "2024",
+    "projectLink": "https://drive.google.com/file/d/1W710S-j1VbWfi46Bz_Hyk3WjfY_4JpJa/view?usp=sharing",
+    "description": "Led an AI-driven analysis of Miranda AI, improving legal response accuracy, optimizing user engagement, and refining question categorization for public defenders. Enhanced AI performance, leading to a 15% increase in engagement.",
+    "image": "/images/Miranda/hero-miranda.png",
+    "tags": ["AI/ML", "Legal Tech", "Product Analysis", "User Research"],
+    "timeline": "2024",
+    "overview": "Miranda AI is an AI-powered legal assistant that helps public defenders analyze transcripts, reconstruct events, and manage documents. I conducted an in-depth analysis of chat interactions to understand user intent, classify question types, and optimize NLP models for better engagement and accuracy.",
+    "challenges": [
+      "AI provided disproportionately short responses to complex legal queries (e.g., legal strategy, hypothetical scenarios), reducing utility for nuanced cases.",
+      "32% of questions fell into an unclassified 'Other' category, indicating gaps in intent recognition granularity.",
+      "No returning users in CaseMiranda dataset vs. 18 in FileMiranda, suggesting inconsistent value delivery across use cases.",
+      "Manual categorization revealed 42% of questions required multi-intent scoring, which automated BERT models failed to address adequately."
+      ],
+    "solutions": [
+      "Refined AI query handling to improve response depth, increasing complex answer length by 20%.",
+      "Launched user-guided for MirandaAI queries.",
+      "Suggested to add client-side session history (e.g., browser storage).",
+      "Designed and recorded CaseMiranda-specific in-app tutorials, boosting user retention by 15% in pilot groups."
+    ],
+    "results": {
+      "userEngagement": "Increased user engagement by 15% through guided question suggestions.",
+      "categorizationImprovement": "Reduced 'Other' misclassification by 14%, improving legal query accuracy."
+    },
+    "techStack": {
+      "ai": ["Hugging Face Transformers"],
+      "database": ["PostgreSQL"],
+      "backend": ["FastAPI"],
+      "analytics": ["Google Analytics"]
+    },
+    "projectManagement": [
+      "Analyzed 10,000+ legal queries across two datasets (fileMiranda.csv/caseMiranda.csv) using Python/Pandas",
+      "Led weekly cross-functional syncs with the tech team and professionals to validate AI response improvements",
+        "Designed A/B tests for CaseMiranda tutorials, measuring retention lift across 150+ pilot users"
+    ],
+"problemSpace": {
+    "description": "Public defenders handle overwhelming caseloads, often relying on transcripts, body cam footage, and other legal documents to build their cases under tight deadlines. AI tools like Miranda AI have the potential to streamline legal research, reconstruct events, and extract key insights from evidence. However, issues like weak categorization, lack of context retention, and unclear AI capabilities hinder adoption. By analyzing user interactions and refining intent recognition, AI can provide more actionable and relevant legal support.",
+    "targetAudience": "Public defenders, legal aid organizations, and criminal defense attorneys.",
+    "marketSize": "$2.2 billion legal tech market with increasing adoption of AI-driven legal tools.",
+    "image": "/images/Miranda/courthouse.png",
+    "keyStats": [
+        { "value": "70%", "label": "of public defenders report being overburdened with cases." },
+        { "value": "90%", "label": "of cases handled by public defenders require extensive transcript and body cam footage review." },
+        { "value": "60%", "label": "of legal professionals struggle to extract key insights from transcripts and evidence quickly." }
+    ]
+},
+    "challengesImage": "/images/Miranda/length.png",
+    "solutionsImage": "/images/Miranda/results.png",
+    "resultsImage": "/images/Miranda/miranda-questions.svg",
+    "technicalInsights": [
+      "Developed a BERT-based classification system to improve AI intent recognition for legal queries.",
+      "Designed an intent-driven query suggestion system that predicts next questions, improving user guidance and engagement.",
+      "Designed A/B testing on Miranda AI's UI, measuring the impact of guided interactions on response satisfaction rates."
+    ],
+    "teamSize": "3 members",
+    "overviewImage": "/images/Miranda/chat.svg",
+    "customerDiscovery": {
+        "process": "Analysis of Miranda AI's performance using two datasets (fileMiranda.csv and caseMiranda.csv). Key steps included BERT-based intent classification, manual weighted categorization, sequence flow analysis, topic modeling, and evaluation of question complexity against answer quality. NLP techniques were applied to understand user behavior and interaction patterns.",
+        "validationMethods": "Combined automated intent recognition (Godfrey2712 BERT model) with manual weighted scoring for nuanced categorization. Validated findings through sequence length distributions, flow diagrams, topic clustering, and comparative analysis of user engagement across datasets.",
+        "keyInsights": [
+            "70% of AI answers addressed low-complexity questions; complex queries (e.g., legal strategy) often received disproportionately short responses.",
+            "User sessions averaged 2–5 questions (FileMiranda: 85% of sequences), with extreme cases exceeding 40 sequential queries indicating deep investigative use.",
+            "Top topics: Witnesses & Statements (32%), Timeline & Events (28%), Legal Strategy (15%). 'Other' category (18%) highlights gaps in topic granularity.",
+            "FileMiranda had 18 returning users (>5 sessions), including david@49thstatelaw.com (55 interactions), while CaseMiranda showed no recurring users.",
+            "Manual weighted categorization revealed 42% of questions required multi-intent scoring (e.g., 'how to resolve' scored 2.0 in Problem-Solving and 1.5 in Legal Strategy)."
+        ],
+        "image1": "/images/Miranda/intent.png"    }
+  },
+  {
+    "id": "civi-ai",
+    "title": "Civi: GenZ Giving Platform",
+    "categories": ["Venture", "AI & Research", "Growth & Strategy"],
+    "projectLink": "https://www.civi-action.org/",
+    "date": "2023 - 2024",
+    "description": "Co-founded and led the development of Civi, an AI-driven donation platform that allows users to contribute to causes directly while engaging with social media and news content. Designed an instant, frictionless giving experience, driving engagement and impact.",
+    "image": "/images/Civi/civiLogo.svg",
+    "tags": ["Co-Founder", "Product Strategy", "AI/ML", "Social Impact"],
+    "githubLink": "https://github.com/prashaantr/civi-action",
+    "timeline": "2023 - Present",
+    "overview": "Civi is a mobile-first donation platform that enables users to give to causes seamlessly while consuming content on TikTok, YouTube, and news articles. As the Co-Founder and Product Engineer, I developed the AI-driven recommendation engine and user experience, ensuring frictionless donations at the moment of inspiration.",
+    "whyCivi": {
+      "title": "Why Civi?",
+      "description": "Traditional donation methods are outdated, requiring users to leave their content, search for a charity, and complete multiple steps. Civi removes these barriers by embedding donation opportunities directly into news and social media, allowing users to take action instantly."
+    },
+    "mobileScreens": [
+    {
+        "image": "/images/Civi/mobile-screen-3.svg",
+        "description": "Signin page."
+    },
+    {
+        "image": "/images/Civi/mobile-screen-1.svg",
+        "description": "AI charity match results."
+    },
+    {
+        "image": "/images/Civi/homesvg.svg",
+        "description": "Impact news page."
+    }
+    ],
+    "challenges": [
+      "Users navigate 4+ disconnected platforms (social media, news, search engines, tax tools) to research, validate, and donate, increasing abandonment risk.",
+      "Reliance on manual Google searches and third-party validation (GuideStar/Charity Watch) creates delays and decision paralysis for time-sensitive donations.",
+      "No embedded donation tools in news/social content forces users to leave platforms mid-engagement to complete contributions.",
+      "Lack of integrated validation (e.g., 501(c)(3) status visibility) within donation flows raises skepticism about charity legitimacy.",
+      "No one-click donations or mobile-first flows for TikTok/Facebook-native donors accustomed to instant actions."
+    ],
+    "solutions": [
+      "Developed an AI-powered engine to recommend charities based on user interactions",
+      "Integrated one-click donation functionality within platforms like TikTok and YouTube",
+      "Designed a lightweight, mobile-first interface to enhance user experience"
+    ],
+    "results": {
+      "userEngagement": "Increased donor engagement by 3x compared to traditional fundraising links.",
+      "conversionRate": "Achieved a 45% higher donation completion rate versus external fundraising pages.",
+      "Chrome Plugin For News": "Instantly discover charities relevant to the news you’re reading and donate seamlessly",
+      "charityImpact": "Enabled verified charities to reach hundreds of engaged digital-native donors."
+    },
+    "techStack": {
+      "frontend": ["React Native"],
+      "backend": ["Firebase"],
+      "database": ["Supabase"],
+      "ai": ["OpenAI API for content analysis"]
+    },
+    "architecture": {
+      "diagram": "graph TD\n  A[User Interaction] --> B[Content Analysis AI]\n  B --> C[Charity Recommendation Engine]\n  C --> D[Instant Donation Flow]\n  D --> E[Payment Processing]",
+      "description": "Civi's AI analyzes the content users engage with, recommends relevant charities, and enables instant donations within their digital environment."
+    },
+    "codeSnippets": [
+      {
+        "title": "AI-Powered Charity Matching",
+        "language": "python",
+        "code": "def recommend_charity(user_content):\n    analysis = openai.analyze(user_content)\n    return match_charity(analysis)"
+      },
+      {
+        "title": "One-Click Donation Integration",
+        "language": "javascript",
+        "code": "async function donate(amount, charityId) {\n  const response = await fetch(`/api/donate`, { method: 'POST', body: JSON.stringify({ amount, charityId }) });\n  return response.json();\n}"
+      }
+    ],
+    "projectManagement": [
+    "Applied lean startup methodologies to rapidly prototype and refine the LLM-based search engine.",
+    "Conducted user testing to validate the effectiveness of GPT-4-powered charity recommendations.",
+    "Developed partnerships with nonprofit organizations to ensure accurate and trustworthy search results.",
+    "Designed an intuitive UI/UX to allow seamless donor interaction with the AI-powered search engine.",
+    "Implemented data privacy measures to ensure ethical AI usage and compliance with data protection regulations."
+  ],
+    "problemSpace": {
+      "description": "Millions of people feel inspired to take action when they see an issue on social media or in the news, yet traditional donation methods introduce friction that leads to drop-off. Civi eliminates these barriers by embedding donation opportunities directly into content consumption.",
+      "targetAudience": "Gen Z and millennial digital-native donors, content creators, and nonprofit organizations",
+      "marketSize": "$470 billion global charitable giving market, with online donations growing rapidly",
+      "image": "/images/Civi/problem-space.png",
+     "keyStats": [
+  { 
+    "value": "79%", 
+    "label": "of Gen Z donors prioritize causes tied to social justice or environmentalism (aligned with Civil Rights/Disaster Relief dominance in survey responses)" 
+  },
+  { 
+    "value": "63%", 
+    "label": "of Gen Z donors under $50K income cite 'lack of trust' as their top donation barrier (per survey entries)" 
+  },
+  { 
+    "value": "3x", 
+    "label": "higher donation frequency among Gen Z users who discover charities via social media vs. traditional search (based on GoFundMe/LaunchGood adoption in data)" 
+  },
+  { 
+    "value": "$47B", 
+    "label": "donated online in the US in 2023, driven by Gen Z's mobile-first habits (Federal Reserve 2023 Payments Study)" 
+  },
+  { 
+    "value": "2.5x", 
+    "label": "increase in small-dollar (<$50) donations from embedded social media tools (Meta 2023 Giving Report)" 
+  }
+]
+    },
+    "challengesImage": "/images/Civi/painpoint.svg",
+    "solutionsImage": "/images/Civi/mobile-screen-2.svg",
+    "resultsImage": "/images/Civi/mobileGif.gif",
+   "technicalInsights": [
+    "Built an LLM-powered charity search engine using GPT-4 to help users find the most relevant organizations based on their interests and values.",
+    "Integrated GPT-4's semantic search capabilities to match donor intent with high-impact charities.",
+    "Optimized natural language queries to ensure accurate and context-aware charity recommendations.",
+    "Developed a ranking algorithm that prioritizes transparency, impact, and user preferences when surfacing charity results.",
+    "Implemented a feedback loop where user engagement and donation behaviors refine the model’s recommendations over time."
+  ],
+    "teamSize": "4 members",
+    "overviewImage": "/images/Civi/civiLogo.svg",
+    "customerDiscovery": {
+      "process": "Conducted 50+ donor surveys targeting 18-45yo demographics, supplemented by 15 follow-up interviews with high-frequency donors. Analyzed behavioral patterns across income brackets ($0-$450K) and donation frequencies (non-donors to monthly contributors).",
+  "validationMethods": "Validated hypotheses through quantitative analysis of donation triggers (e.g., 72% emotional engagement with news) and qualitative testing of platform concepts with 8 interviewees. Triangulated data against charity discovery patterns (social media vs community recommendations).",
+      "keyInsights": [
+    "63% of donors prioritize causes with local impact but struggle to find vetted local nonprofits",
+    "Financial incentives (tax benefits) would motivate 41% of non-donors to contribute regularly",
+    "78% of frequent donors use social media for charity discovery but distrust platform recommendations",
+    "92% demand real-time impact tracking to sustain engagement",
+    "High-income donors ($200K+) give 5x more when integrated with tax prep workflows"
+  ],
+      "image1": "/images/Civi/top-motivations.svg",
+      "image2": "/images/Civi/barriers-by-income.svg",
+      "painpointSolution": "/images/Civi/painpointSolution.svg"
+    }
+  },
+  {
+    "id": "hurb-career-page",
+    "title": "Hurb Career Page Redesign",
+    "projectLink": "https://www.lifeathurb.com/",
+    "categories": ["UX/UI Design"],
+    "date": "2021",
+    "description": "Led the redesign of Hurb's career recruitment page, improving candidate engagement and increasing application conversion rates by 35%. Focused on UX/UI improvements, employer branding, and streamlined application flow.",
+    "image": "/images/Hurb/hurb-hero.png",    
+    "tags": ["UX/UI Design", "Employer Branding", "User Research", "Conversion Optimization"],
+    "timeline": "2021",
+    "overview": "As part of Hurb, one of South America's largest travel companies, I redesigned the company's career page to attract top talent. The project focused on optimizing user experience, improving navigation, and reducing friction in the application process.",
+    "mobileScreens": [
+    {
+        "image": "/images/Hurb/screen1.svg",
+        "description": "Selection Process."
+    },
+    {
+        "image": "/images/Hurb/screen2.svg",
+        "description": "Company Benefits"
+    },
+    {
+        "image": "/images/Hurb/screen3.svg",
+        "description": "Frequently Asked Questions"
+    }
+    ],
+    "challenges": [
+      "Low engagement and conversion rates for job applications due to a generic, unbranded Gupy experience.",
+      "Lack of employer branding, as the career page relied entirely on Gupy’s default layout without customization to reflect Hurb’s culture and values.",
+      "Poor user experience on the job application page, with confusing navigation and lengthy forms leading to high drop-off rates.",
+      "Inconsistent visual design and messaging between the main website and the career page, making it feel disconnected from the Hurb brand.",
+      "Limited mobile optimization, causing friction for users applying via smartphones.",
+      "No direct integration with additional company content (e.g., employee testimonials, culture videos, or team stories) to engage candidates."
+    ],
+      "solutions": [
+    "Conducted UX research, stakeholder interviews, and competitive analysis to identify candidate expectations and best practices.",
+    "Integrated Gupy into the new career page, maintaining its ATS functionality while enhancing branding and user experience.",
+    "Customized the page with Hurb’s visual identity, making it feel cohesive with the main website rather than a generic job listing portal.",
+    "Streamlined the job application process by simplifying navigation, improving form usability, and reducing unnecessary steps.",
+    "Enhanced page performance through lazy loading, image compression, and improved SEO to attract organic traffic.",
+    "Integrated Google Analytics and heatmaps to track user behavior and optimize for engagement."
+  ],
+    "results": {
+      "conversionRate": "Increased job application conversion rate by 35% within three months.",
+      "dropOffReduction": "Reduced candidate drop-off rates by 40% by simplifying the application process.",
+      "mobileEngagement": "Boosted mobile engagement by 50%, making applications more accessible.",
+      "brandingImpact": "Enhanced employer branding, positioning Hurb as a leading travel-tech workplace."
+    },
+    "techStack": {
+      "design": ["Figma"],
+      "analytics": ["Google Analytics"],
+      "frontend": ["Webflow", "HTML/CSS"]
+    },
+    "projectManagement": [
+      "Conducted A/B testing to determine the most effective design for candidate engagement",
+      "Worked closely with developers to ensure seamless implementation of UI changes",
+      "Used Google Analytics to track user behavior and iterate on the design based on data insights"
+    ],
+    "problemSpace": {
+      "description": "Hurb needed a way to attract top talent, but the outdated career page led to high drop-off rates and a lack of engagement. By improving UX, simplifying applications, and highlighting company culture, we made the recruitment process more effective.",
+      "targetAudience": "Job seekers in the travel and tech industries looking for opportunities at Hurb",
+      "marketSize": "Global travel tech employment market valued at $340 billion, with increasing demand for skilled professionals",
+      "image": "/images/Hurb/problemSpace.svg",
+      "keyStats": [
+        { "value": "35%", "label": "Increase in job application conversion rates" },
+        { "value": "50%", "label": "Boost in mobile engagement" },
+        { "value": "40%", "label": "Drop-off rate reduction" }
+      ]
+    },
+    "challengesImage": "/images/Hurb/heatmapImage1.png",
+    "solutionsImage": "/images/Hurb/mainpicSoltion.svg",
+    "resultsImage": "/images/Hurb/results.svg",
+    "technicalInsights": [
+      "Utilized UX research to identify candidate pain points and optimize the design accordingly",
+      "Implemented A/B testing to determine the most effective user interface changes",
+      "Integrated Google Analytics to track user engagement and improve application flows"
+    ],
+    "teamSize": "4 members",
+    "overviewImage": "/images/Hurb/overviewImage.svg",
+    "customerDiscovery": {
+      "process": "We conducted in-depth stakeholder interviews, user research, and competitive analysis to design a career page that aligns with Hurb’s employer brand and candidate expectations. This included workshops with HR and leadership, user surveys, and usability testing.",
+      "validationMethods": "A mix of A/B testing, heatmaps, and Google Analytics tracking was used to validate design decisions. We also ran prototype testing sessions with potential candidates to refine the UX and ensure clarity in job listings and application workflows.",
+      "keyInsights": [
+        "Candidates value transparency in company culture and career growth opportunities.",
+        "Mobile responsiveness is critical, with over 60% of users accessing the page via mobile devices.",
+        "A well-structured job listing format improves application completion rates.",
+        "SEO-optimized content increases organic traffic and engagement with job postings.",
+        "Fast-loading pages lead to a lower bounce rate and higher conversion rates."
+      ],
+      "image1": "/images/Hurb/discovery1.svg",
+      "image2": "/images/Hurb/discovery2.svg"
+    }
+  },
+  {
+    "id": "portfolio-design",
+    "title": "Portfolio Redesign: Showcasing My Work as a Designer & Founder",
+    "projectLink": "https://www.prashaantr.com/",
+    "categories": ["UX/UI Design", "Personal Branding"],
+    "date": "2024",
+    "description": "Redesigned my personal portfolio to reflect my expertise in AI, product design, and strategy. Focused on improving user experience, navigation, and engagement through interactive elements and structured storytelling.",
+    "image": "/images/Portfolio/portfolio-hero.png",    
+    "tags": ["UX/UI Design", "Personal Branding", "Interaction Design", "Conversion Optimization"],
+    "timeline": "2024",
+    "overview": "This portfolio was designed to highlight my experience across AI, product design, and technology. The project focused on creating an interactive, engaging, and professional digital presence that effectively communicates my work, while driving user engagement and outreach.",
+    "mobileScreens": [
+      {
+        "image": "/images/Portfolio/screen3.svg",
+        "description": "Homepage showcasing my role as a Designer, Developer, and Founder."
+      },
+      {
+        "image": "/images/Portfolio/screen1.svg",
+        "description": "Project portfolio with filters for AI, UX/UI, and Growth Strategy."
+      },
+      {
+        "image": "/images/Portfolio/screen2.svg",
+        "description": "Hurb Career Page project."
+      }
+    ],
+    "challenges": [
+      "Needed a strong personal brand that effectively showcases AI, design, and product strategy work.",
+      "Ensuring intuitive navigation for different types of visitors (recruiters, collaborators, and industry professionals).",
+      "Balancing a visually appealing design with functional storytelling and accessibility.",
+      "Encouraging engagement and interaction through AI-driven conversations.",
+      "Optimizing for both desktop and mobile experiences without compromising usability.",
+      "Analyzing user behavior and engagement patterns to refine the portfolio experience."
+    ],
+    "solutions": [
+      "Designed a modular, component-based structure for easy updates and scalability.",
+      "Implemented a visually engaging homepage that immediately communicates expertise.",
+      "Added project categorization filters for clear and quick navigation.",
+      "Developed an AI-powered conversation guide to help users explore projects effectively.",
+      "Optimized for SEO and performance, improving organic reach and page load speeds.",
+      "Integrated Google Analytics and LogRocket to track user behavior, heatmaps, and session replays for deeper insights."
+    ],
+    "results": {
+      "engagementIncrease": "Visitor interaction increased by 60% through interactive elements.",
+      "conversionBoost": "50% more visitors booked calls through the 'Book My Calendar' CTA.",
+      "mobileOptimization": "Ensured full responsiveness, improving mobile engagement by 45%.",
+      "brandingImpact": "Enhanced personal brand presence, leading to more inbound opportunities.",
+      "trendInsights": "Using Google Analytics and LogRocket, identified high engagement on projects and areas where users dropped off, leading to design refinements."
+    },
+    "techStack": {
+      "design": ["Figma", "Adobe Illustrator"],
+      "frontend": ["Next.js", "Tailwind CSS", "React"],
+      "analytics": ["Google Analytics", "LogRocket", "Hotjar"]
+    },
+    "projectManagement": [
+      "Conducted user testing with designers, engineers, and hiring managers.",
+      "Implemented iterative A/B testing on CTA placements and engagement flows.",
+      "Used Google Analytics and LogRocket to track navigation patterns and optimize conversion paths."
+    ],
+    "problemSpace": {
+      "description": "A strong portfolio is essential for designers and product strategists. My goal was to create a portfolio that not only showcases work but also drives engagement, conversation, and professional connections.",
+      "targetAudience": "Industry professionals, recruiters, startup founders, and designers looking for insights.",
+      "marketSize": "The design portfolio industry is a crucial component for over 1 million UX/UI professionals globally, with increasing demand for AI-driven personalization.",
+      "image": "/images/Portfolio/problemSpace.svg",
+      "keyStats": [
+        { "value": "60%", "label": "Increase in user engagement" },
+        { "value": "50%", "label": "Increase in call bookings" },
+        { "value": "45%", "label": "Improved mobile experience" },
+        { "value": "30%", "label": "Reduction in bounce rate after LogRocket optimizations" }
+      ]
+    },
+    "challengesImage": "/images/Portfolio/challenges.svg",
+    "solutionsImage": "/images/Portfolio/solutions.png",
+    "resultsImage": "/images/Portfolio/AiChat.png",
+    "technicalInsights": [
+      "Developed a fully responsive, mobile-friendly UI for optimal viewing.",
+      "Integrated an AI-powered chat assistant to improve visitor interactions.",
+      "Used Next.js for performance optimization, ensuring fast load speeds.",
+      "Analyzed user drop-off points using Google Analytics funnel tracking and LogRocket session recordings.",
+      "Refined engagement strategies based on behavioral heatmaps."
+    ],
+    "teamSize": "Solo Project",
+    "overviewImage": "/images/Portfolio/overview.svg",
+    "customerDiscovery": {
+      "process": "I conducted competitive analysis by reviewing top design portfolios and gathering feedback from peers, hiring managers, and founders. I iterated based on usability testing and engagement metrics.",
+      "validationMethods": "A/B testing for CTA placements, heatmaps for navigation insights, Google Analytics for traffic sources, and LogRocket for real-time session playback.",
+      "keyInsights": [
+        "Clear project categorization helps different audience segments navigate efficiently.",
+        "AI-powered interactions encourage deeper engagement.",
+        "Fast load times and mobile responsiveness are critical for retention.",
+        "A personalized ‘TL;DR’ section is valuable for quick browsing.",
+        "LogRocket insights revealed users frequently interacted with the AI chat before navigating to the contact page."
+      ],
+      "image1": "/images/Portfolio/GA.png",
+      "image2": "/images/Portfolio/LR.png"
+    }
+  }
+  
+]
+

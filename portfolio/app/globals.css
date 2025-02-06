@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 98%;
+  --foreground: 0 0% 0%;
+  --muted: 210 40% 96.1%;
+  --muted-foreground: 215.4 16.3% 46.9%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 222.2 47.4% 11.2%;
+  --card: 0 0% 100%;
+  --card-foreground: 222.2 47.4% 11.2%;
+  --border: 214.3 31.8% 91.4%;
+  --input: 214.3 31.8% 91.4%;
+  --primary: 221.2 83.2% 53.3%;
+  --primary-foreground: 210 40% 98%;
+  --secondary: 210 40% 96.1%;
+  --secondary-foreground: 222.2 47.4% 11.2%;
+  --accent: 210 40% 96.1%;
+  --accent-foreground: 222.2 47.4% 11.2%;
+  --destructive: 0 100% 50%;
+  --destructive-foreground: 210 40% 98%;
+  --ring: 215 20.2% 65.1%;
+  --radius: 0.5rem;
+}
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold tracking-tight font-lato text-black-900;
+  }
+}
+
+.icon-size {
+  @apply w-24 h-24; /* Adjust the size as needed */
+}
+
+.hero-text {
+  @apply text-black-900;
+  font-size: clamp(3rem, 15vw, 12rem);
+  line-height: 0.9;
+  letter-spacing: -0.02em;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: hsl(var(--background));
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: hsl(var(--muted-foreground));
+  border-radius: 20px;
+  border: 3px solid hsl(var(--background));
+}
+
+.app-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.navbar {
+  width: calc(100% - 30vw); /* Adjust width to account for AI chat */
+  padding: 10px;
+  background-color: #ffffff;
+  color: #fff;
+  text-align: center;
+  margin-right: 20vw; /* Shift navbar */
+}
+
+.content-wrapper {
+  display: flex;
+  flex: 1;
+  margin-top: 0px; /* Adjust based on navbar height */
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: #fff; /* Minimalist white background */
+}
+
+@media (min-width: 760px) {
+  .main-content {
+    margin-right: 30vw; /* Shift main content when AI chat is visible */
+  }
+}
+
+.ai-chat {
+  width: 30vw;
+  min-width: 200px;
+  padding: 20px;
+  background-color: #1a1a1a00; /* New background color */
+  color: #e0e0e0; /* New text color */
+  position: fixed;
+  right: 0;
+  top: 60px; /* Align with navbar height */
+  bottom: 0;
+}
+
+footer {
+  width: calc(100% - 20vw); /* Adjust width to account for AI chat */
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  margin-right: 20vw; /* Shift footer */
+}
+
+body {
+  cursor: url('/images/logos/cursor .svg'), auto;
+}
+

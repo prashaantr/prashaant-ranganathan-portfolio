@@ -1,0 +1,44 @@
+About Me
+JusticeText
+Stanford, CA
+Prashaant Ranganathan
+prashran@stanford.edu | linkedin.com/in/prashaantr | prashaantr.com
+    I am a serial founder, computer engineer and trendspotter passionate about building scalable solutions from concept to market. I have successfully scaled products to 20k+ users across startups and enterprises. I am a Stanford Lean Launchpad alum, experienced in de-risking development through lean startup method, rapid prototyping and data backed product decisions. I am looking for roles tackling complex and ambitious challenges where getting it right can deliver a 100X impact.
+Experience
+Co-Founder, CTO Sept. 2024 – Present Qwokka AI San Francisco, CA
+• Bootstrapped and launched an AI platform, securing three clients, including Mexico’s largest fintech company.
+• Designed and built the dashboard and implemented scalable data pipelines using SQL databases.
+• Oversaw client sales relationship and onboarding processes, ensuring seamless adoption.
+Associate Product Manager June 2024 – Aug. 2024
+ • Led the Machine Vision project from inception to MVP, to help public defenders manage evidence.
+• Conducted analysis of user interaction with AI agent Miranda and redesigned the user experience with the Miranda
+AI chat which increased user engagement by 15%.
+Co-Founder Sept. 2023 – May 2024 Civi, A search engine for charities Stanford, CA
+• Designed and built a search tool that linked TikTok and YouTube users to relevant charities, facilitating over 1,000 site visits to organizations addressing causes featured in the videos.
+• Patent pending for the charity search tool.
+Associate Product Manager Feb. 2022 – Aug. 2023 Loon Factory Rio de Janeiro, Brazil
+• Managed end-to-end development cycles for multiple projects, aligning outcomes with stakeholder objectives.
+• Led the redesign of the candidate recruitment page, reducing application drop-off rates by 22%.
+Education
+Stanford University
+B.S. in Product Design (AI and Digital), Minor in Computer Science
+• President, Design for America (2020 – 2021); Dorm RA for 2 years.
+• Stanford Pride Fellowship Recipient; Dhirubhai Ambani Scholarship Recipient.
+• Participated in Lean Launchpad Accelerator; Stanford Startup Society Member.
+AI for Legal Help, Stanford Law School | Research
+• Authored a report on LLM tools for legal assistance in landlord-tenant eviction cases.
+• Conducted 45 ethnographic interviews at Santa Clara County Family Court.
+ Stanford, CA
+Sept. 2018 – Dec. 2024
+Sept. 2023 – May 2023 Jan. 2023 – Mar. 2023
+Technical Skills: Python, JavaScript, R, SQL, Next.js, React, PyTorch, C++, Firebase, GCP, Node.js. Product Management: Jira, Asana, Google Analytics, Lean Startup, Design Thinking.
+Design Skills: Figma, Sketch, Adobe Suite, Procreate, SolidWorks, UX/UI Heuristics.
+Interests
+Outdoors: Competed in Archery. Learned surfing during the pandemic in Hawaii, San Diego, and Brazil. Creative Curiosities: Competitive RPGs (e.g., Civ V); Patent-pending invention in applied biochemistry(A minor planet named after Prashaant by MIT).
+Polyglot: Fluent in English, Hindi, Tamil, Portuguese; Conversational in ASL; currently learning French.
+Multi-Label Image Classification for Recipe Suggestions | Research
+• Developed a neural model to identify ingredients and suggest recipes, reducing food waste.
+• Fine-tuned the C-Tran model for classifying 100 ingredients with 89.2 mean average precision.
+• Fine-tuned a GPT-2-based recipe generation model
+Skills and Tools
+  
